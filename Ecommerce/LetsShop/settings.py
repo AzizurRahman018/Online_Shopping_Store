@@ -28,6 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+COLLECTSTATIC_IGNORE_PATTERNS = ['admin/js/cancel.js', 'admin/js/popup_response.js']
 
 # Application definition
 
