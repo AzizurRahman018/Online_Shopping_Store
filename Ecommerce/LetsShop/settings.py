@@ -124,9 +124,10 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 STATICFILES_DIRS = [BASE_DIR / 'static', ]
 MEDIA_ROOT = BASE_DIR / 'media'
-STATIC_ROOT = BASE_DIR / 'Ecommerce/static'
+# STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 
 
 # Default primary key field type
