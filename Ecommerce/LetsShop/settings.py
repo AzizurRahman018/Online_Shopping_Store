@@ -124,11 +124,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'  # URL to access static files
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Additional locations for static files
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build/static')  # Directory for collectstatic output
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')  # Directory for collectstatic output
 
 # Media files (Uploaded content)
 MEDIA_URL = '/media/'  # URL to access media files
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # STATIC_URL = 'static/'
